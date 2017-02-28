@@ -22,3 +22,10 @@ the project images, interactivity.
 
 Help. Please.
 
+### Update February 27, 2017
+Figured out how to create nested flexboxes and have been working on 
+getting the design somewhat hammered out. Found **another** site to work 
+for my overall porfolio, which brings the list up to **five**.
+
+It would also be helpful if I actually **referenced** the right files
+when pushing back to my repository. :100:
