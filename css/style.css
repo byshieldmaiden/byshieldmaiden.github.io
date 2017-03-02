@@ -10,7 +10,8 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #7F7E7E;
-  background: #464646;
+  /*background: #464646;*/
+  background: #615656;
 }
 
 header {
@@ -102,14 +103,13 @@ ul li {
   display: inline-block;
 }
 
-footer social{
+footer social {
     display: inline-block;
     height: 20px;
     width: 20px;
     background-size: 20px 20px;
     opacity: .5;
     text-indent: -9999px;
-
 }
 
 
@@ -121,15 +121,11 @@ footer social{
   }
   .container {
       display: flex;
-      /*max-width: 1200px;*/
-      justify-content: space-around;
+      justify-content: center;
       margin: 0 auto;
-        flex-flow: wrap;
+      flex-flow: wrap;
+      flex-grow: 2;
+      align-items: flex-start;
+      align-content: stretch;
       }
   }
-
-.container div:nth-of-type(1n+2);
-margin-left: 20px;
-margin-top: 20px;
-
-}

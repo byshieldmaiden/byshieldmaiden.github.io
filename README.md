@@ -29,3 +29,10 @@ for my overall porfolio, which brings the list up to **five**.
 
 It would also be helpful if I actually **referenced** the right files
 when pushing back to my repository. :100:
+
+### Update March 1, 2017
+Added social icons and linking to Twitter, GitHub, and Treehouse. Not
+sure about adding any others. Adding more to my to do list. Still working
+on beating flexbox into submission. Will probably have to restart the layout
+from scratch but I have a better idea of what I'm doing.
+
