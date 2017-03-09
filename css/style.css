@@ -11,17 +11,21 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #7F7E7E;
   /*background: #464646;*/
-  background: #615656;
+  background: #c1ad8a;
 }
 
 header {
-  text-align: center;
-  background: url('../images/lisa-phone-1973-web.jpg') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 150px;
-  line-height: 1.5;
+  border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #2f403a ;
 }
+
+img {
+width: 100%;
+
+}
+
+
 
 /* Link Styles */
 a.social {
@@ -29,8 +33,10 @@ a.social {
   height: 50px;
   width: 50px;
   background-size: 50px 50px;
-  opacity: .5;
+  opacity: .75;
   text-indent: -9999px;
+
+
 }
 
 a.twitter {
@@ -51,13 +57,17 @@ a.social:hover {
 
 /* Section Styles */
 
-
-
 .container div:nth-last-of-type(1n+2) {
   margin-left: 20px;
 }
+
 .social_media {
-display: flex;
+display: block;
+float: right;
+position: relative;
+bottom: 30px;
+margin-right: 10px;
+padding: 0;
 
 }
 .col_1 {
@@ -77,7 +87,7 @@ display: flex;
   margin: 30px;
   text-align: justify;
   /*background: #fff;*/
-  /*border-bottom: 4px solid #ccc;*/
+  /*border-bottom: 4px solid #ccc
   /*border-radius: 6px;*/
 }
 
@@ -101,9 +111,11 @@ ul {
 
 ul li {
   display: inline-block;
+  margin: auto;
+  padding: 0;
 }
 
-footer social {
+a.social-small {
     display: inline-block;
     height: 20px;
     width: 20px;
@@ -116,9 +128,6 @@ footer social {
 /* @media queries */
 @media screen and (min-width: 720px) {
 
-  header {
-    min-height: 500px;
-  }
   .container {
       display: flex;
       justify-content: center;
