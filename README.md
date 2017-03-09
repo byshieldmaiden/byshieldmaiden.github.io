@@ -1,10 +1,21 @@
 ## Lisa's Final Portfolio
 
+### Purpose
+The purpose of this project is to showcase other design and front end
+web development projects I have done. These projects will range from single
+page static sites to multipage dynamic sites. 
+
+
 * Current markup is at http://byshieldmaiden.github.io
 * Mockup is images/teamtreehousemockup.png and images/teamtreehousemockup-2.png
 * Portfolio will also live at http://lisa.wtf
 
-### Idea
+### To Run
+Head to http://byshieldmaiden.github.io which will execute the 
+index.html file.
+
+
+### Mockup Idea
 To create a landing page with a browser width header, social media links
 in the right top corner and left bottom corner (github / team treehouse / email / ?), navigation bar, and sticky footer.
 In the main content area, I was thinking of three or two columns with the 
