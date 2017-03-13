@@ -1,3 +1,15 @@
+
+
+/* Base Styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 /* Global Layout */
 * {
   box-sizing: border-box;
@@ -7,7 +19,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #7F7E7E;
   /*background: #464646;*/
@@ -19,23 +30,16 @@ img {
 width: 100%;
 }
 
-img.header {
+/*img.header {
   border-bottom-style: solid;
 	border-bottom-width: 5px;
 	border-bottom-color: #2f403a;
-}
+}*/
 
 
 
 /* Link Styles */
-a.social {
-  display: inline-block;
-  height: 48px;
-  width: 48px;
-  background-size: 48px 48px;
-  opacity: .75;
-  text-indent: -9999px;
-}
+
 
 a.twitter {
   background-image: url(../images/twitter-logo.png);
@@ -46,59 +50,40 @@ a.treehouse {
 a.github {
   background-image: url(../images/github-logo.png);
 }
-a.social:hover {
-  opacity: 1;
+a.social {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  background-size: 48px 48px;
+  opacity: .75;
+  text-indent: -9999px;
 }
-a.social-small:hover {
-  opacity: 1;
+a.social-small {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    background-size: 36px 36px;
+    opacity: .5;
+    text-indent: -9999px;
 }
-.clearfix {
-  clear: both;
+
+a.social:hover, a.social-small:hover  {
+  opacity: 1;
 }
 
 /* Section Styles */
 
-.container div:nth-last-of-type(1n+2) {
-  margin-left: 20px;
-}
 
 .social_media {
 display: block;
-float: right;
+text-align: center;
 position: relative;
 bottom: 30px;
 margin-right: 10px;
-padding: 0;
-
-}
-.col_1 {
-  flex-direction: column;
-  flex: 1 1;
-  width: 200px;
-  margin: 30px;
-  padding: 20px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-}
-.col_2 {
-  flex-direction: column;
-  flex: 1 1;
-  margin: 30px;
-  text-align: justify;
-  /*background: #fff;*/
-  /*border-bottom: 4px solid #ccc
-  /*border-radius: 6px;*/
 }
 
 
-.item {
-  margin: 20px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 6px;
-}
+
 
 .clearfix {
   clear: both;
@@ -110,8 +95,8 @@ ul {
   padding: 0;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
+  text-align: center;
 }
-
 
 ul li {
   display: inline-block;
@@ -119,26 +104,24 @@ ul li {
   padding: 0;
 }
 
-a.social-small {
-    display: inline-block;
-    height: 36px;
-    width: 36px;
-    background-size: 36px 36px;
-    opacity: .5;
-    text-indent: -9999px;
-}
 
 
 /* @media queries */
 @media screen and (min-width: 720px) {
-
-  .container {
+  .container div:nth-of-type(1n+2){
+    margin-left: 20px;
+    }
+    .container{
       display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      flex-flow: wrap;
-      flex-grow: 2;
-      align-items: flex-start;
-      align-content: stretch;
-      }
+
+    }
+    .social_media {
+    float: right;
   }
+
+footer {
+  text-align: center;
+}
+
+
+}
