@@ -1,5 +1,3 @@
-
-
 /* Base Styles */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -15,31 +13,32 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
 }
 
-body {
+html {
   height: 100%;
+}
+
+body {
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   color: #7F7E7E;
-  /*background: #464646;*/
-  background: #c1ad8a;
+  background: #151C24;
 }
-
 
 img {
 width: 100%;
 }
 
-/*img.header {
+img.header {
   border-bottom-style: solid;
-	border-bottom-width: 5px;
-	border-bottom-color: #2f403a;
-}*/
+	border-bottom-width: 45px;
+	border-bottom-color: #5B6167;
+}
 
 
 
 /* Link Styles */
-
 
 a.twitter {
   background-image: url(../images/twitter-logo.png);
@@ -55,7 +54,7 @@ a.social {
   height: 48px;
   width: 48px;
   background-size: 48px 48px;
-  opacity: .75;
+  opacity: .5;
   text-indent: -9999px;
 }
 a.social-small {
@@ -73,17 +72,36 @@ a.social:hover, a.social-small:hover  {
 
 /* Section Styles */
 
+.col_1, .col_2 {
+  flex-direction: row;
+  flex: 1 1;
+  text-align: justify;
+  background: #fff;
+  border-radius: 6px;
+  margin: 0px 10px 10px 0px;
+  width: 100%;
+}
+
+.item_1{
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.item_2{
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+}
 
 .social_media {
 display: block;
 text-align: center;
 position: relative;
-/*bottom: 30px;*/
+bottom: 50px;
 margin-right: 10px;
 }
-
-
-
 
 .clearfix {
   clear: both;
@@ -104,24 +122,34 @@ ul li {
   padding: 0;
 }
 
-
-
-/* @media queries */
-@media screen and (min-width: 720px) {
-  .container div:nth-of-type(1n+2){
-    margin-left: 20px;
-    }
-    .container{
-      display: flex;
-
-    }
-    .social_media {
-    float: right;
-  }
-
 footer {
   text-align: center;
+    }
+
+/* @media queries */
+@media all and ( min-width: 480px ) {
+  .col_1, .col_2 {
+    flex-direction: column;
+  }
+
 }
 
+@media all and (min-width: 720px) {
+  .col_1 {
+    width: 30%;
+    margin-left: 25px;
+  }
+
+    .social_media {
+    float: right;
+    }
+    .container {
+          display: flex;
+          justify-content: center;
+          flex-flow: wrap;
+          flex-grow: 2;
+          align-items: flex-start;
+          align-content: stretch;
+      }
 
 }
