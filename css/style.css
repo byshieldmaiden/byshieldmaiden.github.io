@@ -14,97 +14,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
-  height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   min-height: 100%;
-  margin: 0;
+  margin: 0 0 50px;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  color: #7F7E7E;
-  background: #151C24;
+  color: #fff;
+  background: #6a7076;
 }
 
 img {
 width: 100%;
-}
-
-img.header {
-  border-bottom-style: solid;
-	border-bottom-width: 45px;
-	border-bottom-color: #5B6167;
-}
-
-
-
-/* Link Styles */
-
-a.twitter {
-  background-image: url(../images/twitter-logo.png);
-}
-a.treehouse {
-  background-image: url(../images/treehouse-logo.png);
-}
-a.github {
-  background-image: url(../images/github-logo.png);
-}
-a.social {
-  display: inline-block;
-  height: 48px;
-  width: 48px;
-  background-size: 48px 48px;
-  opacity: .5;
-  text-indent: -9999px;
-}
-a.social-small {
-    display: inline-block;
-    height: 36px;
-    width: 36px;
-    background-size: 36px 36px;
-    opacity: .5;
-    text-indent: -9999px;
-}
-
-a.social:hover, a.social-small:hover  {
-  opacity: 1;
-}
-
-/* Section Styles */
-
-.col_1, .col_2 {
-  flex-direction: row;
-  flex: 1 1;
-  text-align: justify;
-  background: #fff;
-  border-radius: 6px;
-  margin: 0px 10px 10px 0px;
-  width: 100%;
-}
-
-.item_1{
-  padding: 20px;
-  background: #fff;
-  border-radius: 6px;
-}
-
-.item_2{
-  margin-bottom: 20px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 6px;
-}
-
-.social_media {
-display: block;
-text-align: center;
-position: relative;
-bottom: 50px;
-margin-right: 10px;
-}
-
-.clearfix {
-  clear: both;
 }
 
 ul {
@@ -118,38 +42,35 @@ ul {
 
 ul li {
   display: inline-block;
-  margin: auto;
-  padding: 0;
 }
 
 footer {
-  text-align: center;
-    }
-
-/* @media queries */
-@media all and ( min-width: 480px ) {
-  .col_1, .col_2 {
-    flex-direction: column;
-  }
-
+    position: absolute;
+    margin-top: 10px;
+    padding: 5px 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
 }
 
-@media all and (min-width: 720px) {
-  .col_1 {
-    width: 30%;
-    margin-left: 25px;
+.clearfix {
+  clear: both;
+}
+
+.github {
+  margin-right: 15px;
+}
+
+/* Link Styles */
+
+
+
+
+@media all and (min-width: 769px) {
+  .social_media {
+  float: right;
   }
-
-    .social_media {
-    float: right;
-    }
-    .container {
-          display: flex;
-          justify-content: center;
-          flex-flow: wrap;
-          flex-grow: 2;
-          align-items: flex-start;
-          align-content: stretch;
-      }
-
+  .social_small {
+    padding-top: 5px;
+  }
 }
