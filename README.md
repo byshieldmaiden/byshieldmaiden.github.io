@@ -12,7 +12,8 @@ page static sites to multipage dynamic sites.
 
 ### To Run
 Head to http://byshieldmaiden.github.io which will execute the 
-index.html file.
+index.html file. When loaded, the jQuery call to Flickr will bring up current images from my personal
+Flickr feed that have the tag "pug"
 
 
 ### Mockup Idea
