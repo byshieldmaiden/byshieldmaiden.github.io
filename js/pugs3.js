@@ -6,7 +6,7 @@ $(document).ready(function() {
   var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?id=20538663@N00&size=b&lang=en-us&format=json&jsoncallback=?";
   var pug = $(this).text();
   var flickrOptions = {
-  tags: "pug",
+  tags: "pug, pugs",
     format: "json"
   } // end FlickrOptions
   //Time to make it pretty
