@@ -41,6 +41,7 @@ h1 {
 p {
   font-size: 1em;
   padding-bottom: 5px;
+  line-height: 1.25em;
 }
 
 p span, h1 span, li span{
@@ -110,20 +111,41 @@ a {
   border-radius: 15px;
 }
 
+/* pug photos */
+
+#photos {
+  vertical-align: middle;
+}
+
+#photos .image {
+  display: block;
+  min-height: 350px;
+  text-align: center;
+  height: 400px;
+}
+
+button {
+color: #fff;
+background-color: #BB5100;
+padding: 8px 25px;
+border-radius: 5px;
+}
+
+
 
 
 /* Media Queries */
 
 @media all and (min-width: 769px) {
-  .social_media {
-  float: right;
-  }
-  .social_small {
-    padding-top: 5px;
-  }
   .grid__row {
     flex-direction: row;
     align-items: flex-start;
+  }
+  .social_media {
+    float: right;
+  }
+  .grid__item_1 {
+    width: auto;
   }
 
 }

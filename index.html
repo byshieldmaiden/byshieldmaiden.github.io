@@ -44,22 +44,33 @@
 <h1>Hi! I'm <span>Lisa</span>!</h1>
 <p>Welcome to my capstone project for <span>Code Louisville</span>!</p>
 <p>For this course, we took modules such as <span>HTML</span>, <span>CSS</span>, <span>Git</span> / <span>Github</span>, how to use the console, <span>JavaScript</span> / <span>jQuery</span> / <span>Ajax</span>, as well as modules on <span>accessibility</span>, <span>optimization</span>, design patterns, and frameworks.</p>
-<p>You can check out my profile over at <a href="http://teamtreehouse.com/lisarabey" target="_blank"> <span>Treehouse</span></a> to see the modules I've completed.</p>
+<p>You can check out my profile over at <a href="http://teamtreehouse.com/lisarabey" target="_blank"><span>Treehouse</span></a> to see the modules I've completed.</p>
 <p>How was this site made?</p>
+<p>
 <ul class="text">
   <li>Created mobile first</li>
+  <li>Laid out using <span>flexbox</span></li>
     <li>Accessiblity when applicable</li>
     <li><span>SEO</span> when applicable</li>
     <li>Front end optimization so it loads quickly (images optimized for the web, <span>DRY</span> code)</li>
-  </ul>
+  </ul></p>
+  <p>How was this site <em>not</em> made?</p>
+  <p>
+    <ul class="text">
+      <li>Minification of the code was not utilized as I needed to make changes on the fly</li>
+      <li>I did not use a framework such at <span>bootstrap</span> or <span>foundation</span> as that would have been more complex than I needed</li>
+    </ul></p>
 </div>
       <div class="grid__item_2">
-        <img src="images/pug_finalportfolio.jpg" alt="picture of a pug">
+        <div id="photos">
 
-        <p>Hammock kombucha af bitters, umami brunch occupy. Venmo bespoke scenester, vaporware leggings hella pickled selvage disrupt kombucha vexillologist brunch tofu. Chicharrones narwhal kitsch mumblecore semiotics, lo-fi post-ironic hashtag pop-up glossier lumbersexual yuccie. Biodiesel paleo trust fund photo booth. Tofu squid try-hard occupy pug yuccie. Cold-pressed intelligentsia iceland pork belly microdosing. Twee ethical brooklyn microdosing iPhone, subway tile fam photo booth next level keytar.</p>
-
-        <p>Tacos fap portland tumblr twee food truck. Bitters bespoke jean shorts, skateboard fap pour-over chia godard neutra sartorial. La croix mumblecore bushwick williamsburg copper mug. IPhone irony fam, listicle blog trust fund glossier. Narwhal knausgaard tote bag, franzen schlitz roof party meggings retro aesthetic meh echo park edison bulb skateboard godard prism. Shoreditch banjo health goth, lo-fi pok pok 3 wolf moon vegan poke bicycle rights hella pickled literally direct trade. Etsy tofu leggings actually portland, unicorn selvage vinyl four loko normcore 3 wolf moon retro microdosing.</p>
-
+        </div>
+        <ul class="select">
+          <li><button type="button">Pugs!</button></li>
+        </ul>
+        <ul class="select">
+        <button type="button"><a id="refreshButton" href="#">Refresh</a></button>
+        </ul>
       </div>
     </div>
   </div>
@@ -74,9 +85,18 @@
         <li class="social"><a href="http://byshieldmaiden.github.io" target="_blank"><img src="images/github-logo-small.png" alt="icon for the github logo"></a></li>
       </ul>
   </footer>
-
-
 <!-- end footer -->
+
+<!-- add JavaScript/jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/pugs.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#refreshButton").click(function(e){
+      e.preventDefault();
+      window.location.reload();
+    });
+    </script>
+<!-- endJavaScript -->
 
 <!-- end body structure -->
 </body>
