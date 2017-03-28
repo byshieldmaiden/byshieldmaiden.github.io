@@ -23,12 +23,32 @@ body {
   margin: 0 0 50px;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: #000;
   background: #6a7076;
 }
 
 img {
 width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1em;
+  padding-bottom: 5px;
+}
+
+p span, h1 span, li span{
+  color: #fff;
+  background-color: #BB5100;
+  padding: 2px;
+  border-radius: 5px;
+
 }
 
 ul {
@@ -40,9 +60,16 @@ ul {
   text-align: center;
 }
 
-ul li {
+ul li.social {
   display: inline-block;
 }
+
+ul.text {
+  text-align: left;
+  list-style-type: square;
+  margin-left: 10px;
+}
+
 
 footer {
     position: absolute;
@@ -62,9 +89,30 @@ footer {
 }
 
 /* Link Styles */
+a {
+  text-decoration: none;
+}
+
+/* Flexbox */
+.grid {
+  margin: 15px;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid__item_1, .grid__item_2 {
+  padding: 12px;
+  margin: 0px 10px 10px 0px;
+  background: #fff;
+  border-radius: 15px;
+}
 
 
 
+/* Media Queries */
 
 @media all and (min-width: 769px) {
   .social_media {
@@ -73,4 +121,9 @@ footer {
   .social_small {
     padding-top: 5px;
   }
+  .grid__row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
 }
